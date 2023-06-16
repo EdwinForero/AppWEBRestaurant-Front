@@ -1,0 +1,76 @@
+// Variables
+$button-color: #6A041D;
+$button-bg: #D8DCFF;
+$button-padding: 10px 20px;
+$button-border-radius: 4px;
+
+.navbar {
+  background-color: #6A041D;
+  position: relative;
+  color: #D8DCFF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1;
+  margin-bottom: 25px;
+  flex-wrap: nowrap;
+  vertical-align: middle;
+
+  .p {
+    margin-left: 25px;
+    position: relative;
+    margin-right: 25px;
+    margin-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: #D8DCFF;
+  }
+
+}
+
+.button {
+  display: inline-block;
+  padding: $button-padding;
+  background-color: $button-bg;
+  color: $button-color;
+  border-radius: $button-border-radius;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($button-bg, 5%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #D8DCFF;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.navtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #D8DCFF;
+  flex: 1;
+  height: 100%;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+
+  &:hover {
+    background-color: #410111;
+  }
+}

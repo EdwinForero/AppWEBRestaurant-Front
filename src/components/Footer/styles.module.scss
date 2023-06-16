@@ -1,0 +1,53 @@
+.footer {
+    position: relative;
+    background-color: #6A041D;
+    color: #f5fce5;
+    vertical-align: middle;
+    padding: 20px;
+    margin-top: 20px;
+
+    .p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footerContent {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footerSection {
+            flex: 1 1 auto;
+            margin-bottom: 10px;
+
+            h4 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                text-align: left;
+
+                tbody {
+                    tr {
+                        td {
+                            padding: 8px;
+
+                            a {
+                                color: #f5fce5;
+                                text-decoration: none;
+                            }
+
+                            &:not(:last-child) {
+                                border-right: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
